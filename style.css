@@ -1,0 +1,12 @@
+.elem {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.tarolo {
+    width: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
