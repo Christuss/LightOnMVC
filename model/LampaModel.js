@@ -1,7 +1,10 @@
 class LampaModel {
     #lista = [];
     constructor() {
-        this.#lista = [0,0,0,0,0,0,0,0,0]
+        this.#lista = [
+            0,0,0,
+            0,0,0,
+            0,0,0]
     }
 
     getLista(){

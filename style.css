@@ -2,6 +2,8 @@
     width: 100px;
     height: 100px;
     background-color: red;
+    border: 1px solid rgb(133, 0, 0);
+    border-radius: 5px;
 }
 .tarolo {
     width: 400px;
@@ -9,4 +11,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
+    background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 10px;
+}
+.gomb {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.gomb:hover {
+    background-color: gray;
 }
