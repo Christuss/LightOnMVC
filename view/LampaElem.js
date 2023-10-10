@@ -1,8 +1,8 @@
 class LampaElem {
     #sorszam;
     #allapot;
-    constructor(szuloElem, sorszam){
-        this.#allapot = false
+    constructor(szuloElem, sorszam, allapot){
+        this.#allapot = allapot
         this.#sorszam = sorszam;
         this.SZULO = szuloElem;
         szuloElem.append("<div class='elem'></div>");
@@ -23,12 +23,12 @@ class LampaElem {
     }
 
     setSzin(){
-        if (!this.#allapot) {
+        if (this.#allapot === 0) {
             this.ELEM.css("background-color", "green");
-            this.#allapot = true
+            this.#allapot = 1
         } else {
             this.ELEM.css("background-color", "red");
-            this.#allapot = false
+            this.#allapot = 0
         }
     };
 

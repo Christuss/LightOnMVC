@@ -1,7 +1,9 @@
 import LampaElem from "./LampaElem.js";
 
 class Lampak {
-    constructor(){
+    #lista
+    constructor(lista){
+        this.#lista = lista;
         $("main").html("<div class='tarolo'></div>");
         this.SZULO = $(".tarolo");
         this.jatekterFeltolt();
@@ -10,7 +12,7 @@ class Lampak {
     }
     jatekterFeltolt() {
         for (let index = 0; index < 9; index++) {
-            new LampaElem(this.SZULO, index);
+            let lamp = new LampaElem(this.SZULO, index, this.#lista[index]);
         }
     }
 }
